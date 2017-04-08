@@ -44,7 +44,7 @@ exports.authenticate = function(req, res){
 				// Store in variable 
                 var access_token = body.access_token;
 				// Log in console
-				console.log('Auth in Auth worked');
+				//console.log('Auth in Auth worked');
 				// Return the token to the requestor
 				res.send(access_token);
             }

@@ -51,7 +51,7 @@ app.controller('mainController', function($scope, $http) {
 				// Store the auth token to be used for time-series requests
 				token = data;   
 				$scope.token=token;
-				console.log(token);
+				//console.log(token);
 				loadKpiData('Engine Speed');
 			})
         .error(function(data) {
@@ -65,10 +65,10 @@ app.controller('mainController', function($scope, $http) {
 		$http.get('/api/kpi/' + kpiName + '/' + $scope.token)
 
 			.success(function(data) {
-			   console.log(data);
+			   //console.log(data);
 			})
 			.error(function(data) {
-				console.log('Error: ' + data);
+				//console.log('Error: ' + data);
 			});
 
     //end function
